@@ -56,15 +56,63 @@
 		9CA04E5326F91DBC00B3326B /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				9CA04E5426F91DBC00B3326B /* AppDelegate.swift */,
-				9CA04E5626F91DBC00B3326B /* SceneDelegate.swift */,
-				9CA04E5826F91DBC00B3326B /* ViewController.swift */,
-				9CA04E5A26F91DBC00B3326B /* Main.storyboard */,
-				9CA04E5D26F91DBD00B3326B /* Assets.xcassets */,
-				9CA04E5F26F91DBD00B3326B /* LaunchScreen.storyboard */,
-				9CA04E6226F91DBD00B3326B /* Info.plist */,
+				9CA04E6826F91DE900B3326B /* ViewControllers */,
+				9CA04E6926F91DFB00B3326B /* Models */,
+				9CA04E6A26F91E0B00B3326B /* Services */,
+				9CA04E6B26F91E1C00B3326B /* Storyboards */,
+				9CA04E6C26F91E2500B3326B /* App */,
+				9CA04E6D26F91E2C00B3326B /* Resourses */,
 			);
 			path = AnimationApp;
+			sourceTree = "<group>";
+		};
+		9CA04E6826F91DE900B3326B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CA04E5826F91DBC00B3326B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9CA04E6926F91DFB00B3326B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CA04E6A26F91E0B00B3326B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9CA04E6B26F91E1C00B3326B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9CA04E5F26F91DBD00B3326B /* LaunchScreen.storyboard */,
+				9CA04E5A26F91DBC00B3326B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9CA04E6C26F91E2500B3326B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9CA04E5426F91DBC00B3326B /* AppDelegate.swift */,
+				9CA04E5626F91DBC00B3326B /* SceneDelegate.swift */,
+				9CA04E6226F91DBD00B3326B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9CA04E6D26F91E2C00B3326B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				9CA04E5D26F91DBD00B3326B /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCDM2HMWLU;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnatoliiMironov.AnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCDM2HMWLU;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnatoliiMironov.AnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
