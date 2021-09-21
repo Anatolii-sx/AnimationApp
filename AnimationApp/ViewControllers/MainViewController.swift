@@ -11,14 +11,16 @@ class MainViewController: UIViewController {
 
     var animations = Animation.getAnimationsList()
     
-    var preset: String = ""
-    var curve: String = ""
-    var force: CGFloat = 0
-    var duration: CGFloat = 0
-    var delay: CGFloat = 0
+    private var preset: String = ""
+    private var curve: String = ""
+    private var force: CGFloat = 0
+    private var duration: CGFloat = 0
+    private var delay: CGFloat = 0
     
     @IBOutlet var springView: SpringView!
+    
     @IBOutlet var propertiesLabel: UILabel!
+    
     @IBOutlet var springRunButton: SpringButton!
     
     override func viewDidLoad() {

@@ -33,11 +33,11 @@ class DataManager {
     }
     
     var durations: [CGFloat] {
-        getRandomValues(from: 0.5, to: 1)
+        getRandomValues(from: 0.5, to: 1.0)
     }
     
     var delays: [CGFloat] {
-        getRandomValues(from: 0.5, to: 1)
+        getRandomValues(from: 0.5, to: 1.0)
     }
     
     private func getRandomValues(from: CGFloat, to: CGFloat) -> [CGFloat] {
