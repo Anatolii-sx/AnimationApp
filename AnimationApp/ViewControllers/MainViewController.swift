@@ -9,7 +9,7 @@ import Spring
 
 class MainViewController: UIViewController {
 
-    var animations = Animation.getAnimationsList()
+    private var animations = Animation.getAnimationsList()
     
     private var preset: String = ""
     private var curve: String = ""
