@@ -48,7 +48,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Run"/>
                                 <connections>
-                                    <action selector="springRunButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPz-Rv-N48"/>
+                                    <action selector="springRunButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ut0-Lx-qF0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="propertiesLabel" destination="zL6-RI-Jjj" id="f5X-Xq-Xqn"/>
-                        <outlet property="springRunButton" destination="Afp-fJ-Q1X" id="k3N-aU-CQH"/>
+                        <outlet property="springRunButton" destination="Afp-fJ-Q1X" id="98l-OI-LIC"/>
                         <outlet property="springView" destination="dKp-Dp-Syy" id="LiD-uL-gjJ"/>
                     </connections>
                 </viewController>

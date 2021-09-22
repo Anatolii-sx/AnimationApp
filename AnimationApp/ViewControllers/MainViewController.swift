@@ -9,6 +9,12 @@ import Spring
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var springView: SpringView!
+    
+    @IBOutlet var propertiesLabel: UILabel!
+    
+    @IBOutlet var springRunButton: SpringButton!
+    
     private var animations = Animation.getAnimationsList()
     
     private var preset: String = ""
@@ -16,12 +22,6 @@ class MainViewController: UIViewController {
     private var force: CGFloat = 0
     private var duration: CGFloat = 0
     private var delay: CGFloat = 0
-    
-    @IBOutlet var springView: SpringView!
-    
-    @IBOutlet var propertiesLabel: UILabel!
-    
-    @IBOutlet var springRunButton: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
         getPropertiesForLabel()
     }
 
-    @IBAction func springRunButtonTapped(_ sender: SpringButton) {
+    @IBAction func springRunButtonTapped() {
         runSpringViewAnimation()
         getPropertiesForLabel()
         getRandomPropertiesForAnimation()
@@ -66,9 +66,9 @@ class MainViewController: UIViewController {
         
         preset = randomAnimation?.preset ?? "shake"
         curve = randomAnimation?.curve ?? "spring"
-        force = randomAnimation?.force ?? 1
-        duration = randomAnimation?.duration ?? 1
-        delay = randomAnimation?.delay ?? 0.5
+        force = CGFloat(randomAnimation?.force ?? 1)
+        duration = CGFloat(randomAnimation?.duration ?? 1)
+        delay = CGFloat(randomAnimation?.delay ?? 0.5)
     }
     
     private func getButtonTitle() {
