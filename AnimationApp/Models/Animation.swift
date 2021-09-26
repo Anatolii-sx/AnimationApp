@@ -4,14 +4,13 @@
 //
 //  Created by Анатолий Миронов on 21.09.2021.
 //
-import Foundation
 
 struct Animation {
     let preset: String
     let curve: String
-    let force: Double
-    let duration: Double
-    let delay: Double
+    let force: String
+    let duration: String
+    let delay: String
 }
 
 extension Animation {
@@ -41,12 +40,12 @@ extension Animation {
         return animations
     }
     
-    static func getRandomValues(from: Double, to: Double) -> [Double] {
-        var valuesList: [Double] = []
+    static func getRandomValues(from: Double, to: Double) -> [String] {
+        var valuesList: [String] = []
         
         for _ in 0..<DataManager.shared.presets.count {
             let value = Double.random(in: from...to)
-            valuesList.append(round(100 * value) / 100)
+            valuesList.append(String(format: "%.2f", value))
         }
         
         return valuesList

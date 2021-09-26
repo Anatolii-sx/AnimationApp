@@ -66,9 +66,9 @@ class MainViewController: UIViewController {
         
         preset = randomAnimation?.preset ?? "shake"
         curve = randomAnimation?.curve ?? "spring"
-        force = CGFloat(randomAnimation?.force ?? 1)
-        duration = CGFloat(randomAnimation?.duration ?? 1)
-        delay = CGFloat(randomAnimation?.delay ?? 0.5)
+        force = CGFloat(Double(randomAnimation?.force ?? "1") ?? 1)
+        duration = CGFloat(Double(randomAnimation?.duration ?? "1") ?? 1)
+        delay = CGFloat(Double(randomAnimation?.delay ?? "0.5") ?? 0.5)
     }
     
     private func getButtonTitle() {
