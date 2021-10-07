@@ -25,5 +25,5 @@ class DataManager {
         "spring", "linear", "easeIn", "easeOut", "easeInOut"
     ]
     
-    init() {}
+    private init() {}
 }
